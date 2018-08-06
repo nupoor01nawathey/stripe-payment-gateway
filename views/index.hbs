@@ -1,0 +1,29 @@
+<section class="py-2">
+    <div class="row">
+        <div class="col-md-6 text-center">
+            <h1 class="display-3 mt-3 pt-5">
+                Wel Development EBook
+            </h1>
+            <p class="lead">Learn Web Development</p>
+            <form action="/charge" method="POST">
+                <script
+                    src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+                    data-key="pk_test_RDdKHCFpNdIPzgbAtIZeUbnO"
+                    data-amount="2500"
+                    data-name="Stripe Payment Gateway App"
+                    data-description="Stripe payment gateway"
+                    data-image="https://stripe.com/img/documentation/checkout/marketplace.png"
+                    data-locale="auto">
+                </script>
+                <script>
+                    // hide default stripe button
+                    document.getElementsByClassName('stripe-button-el')[0].style.display = 'none';
+                </script>
+                <button type="submit" class="btn btn-outline-dark text-white btn-lg">Purchase for $25</button>
+            </form> 
+        </div>
+        <div class="col-md-6">
+            <img src="/img/book.png" alt="" class="img-fluid">
+        </div>
+    </div>
+</section>
